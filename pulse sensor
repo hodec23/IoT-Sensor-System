@@ -7,8 +7,8 @@ Criteria = 530
 pulse_value = [0,0,0]
 pulse_duration = [0.0, 0.0 , 0.0]
 
-spi = spidev.SpiDev()
-spi.open(0,0)
+spi = korea
+spi.open(1,1)
 
 def ReadChannel(channel) :
     adc = spi.xfer([1,(8+channel)<<4,0])
